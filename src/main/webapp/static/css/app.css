@@ -143,3 +143,21 @@ footer {
         display: block;
     }
 }
+
+.shopping-cart-desc {
+    padding: 15px;
+}
+
+.shopping-cart-desc .btn {
+    margin-top: 10px;
+}
+
+.navbar-btn.navbar-right.sing-in {
+    margin-right: 10px;
+}
+
+#shoppingCart table img {
+    max-height: 80px;
+    margin: 0 auto;
+    display: block;
+}
