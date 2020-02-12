@@ -24,14 +24,14 @@
                     <a class="navbar-brand" href="products.html">IShop</a>
                 </div>
                 <div class="collapse navbar-collapse" id="ishopNav">
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul id="currentShoppingCart" class="nav navbar-nav navbar-right hidden">
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                 <i class="fa fa-shopping-cart" aria-hidden="true"></i> Shopping cart (<span class="total-count">0</span>)<span class="caret"></span>
                             </a>
                             <div class="dropdown-menu shopping-cart-desc">
                                 Total count: <span class="total-count">0</span><br>
-                                Total cost: <span class="cost">0</span><br>
+                                Total cost: <span class="total-cost">0</span><br>
                                 <a href="shopping-cart.html" class="btn btn-primary btn-block">View cart</a>
                             </div>
                         </li>
@@ -115,7 +115,7 @@
             <main class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
                 <div id="productList">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3  col-xlg-2">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
                             <!-- PRODUCT DATA -->
                             <div id="product1235" class="panel panel-default product">
                                 <div class="panel-body">
@@ -130,15 +130,17 @@
                                     <h4 class="name">SanDisk 1300</h4>
                                     <div class="code">Code 27020</div>
                                     <div class="price">$80.00</div>
-                                    <a class="btn btn-primary pull-right" data-id-product="1235">BUY</a>
-                                    <ul class="list-group">
-                                        <li class="list-group-item"><small>Category: </small><span class="category">MP3-player</span></li>
-                                        <li class="list-group-item"><small>Producer: </small><span class="producer">SanDisk</span></li>
-                                    </ul>
+                                    <a class="btn btn-primary pull-right buy-btn" data-id-product="1235">BUY</a>
+                                    <div class="list-group">
+                                        <span class="list-group-item"><small>Category: </small><span class="category">MP3-player</span></span>
+                                        <span class="list-group-item"><small>Producer: </small><span class="producer">SanDisk</span></span>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- /PRODUCT DATA -->
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                            <!-- PRODUCT DATA -->
                             <div id="product1236" class="panel panel-default product">
                                 <div class="panel-body">
                                     <div class="thumbnail">
@@ -152,15 +154,17 @@
                                     <h4 class="name">Asus HT500DS4D</h4>
                                     <div class="code">Code 27013</div>
                                     <div class="price">$570.00</div>
-                                    <a class="btn btn-primary pull-right" data-id-product="1236">BUY</a>
-                                    <ul class="list-group">
-                                        <li class="list-group-item"><small>Category: </small><span class="category">Notebook</span></li>
-                                        <li class="list-group-item"><small>Producer: </small><span class="producer">Asus</span></li>
-                                    </ul>
+                                    <a class="btn btn-primary pull-right buy-btn" data-id-product="1236">BUY</a>
+                                    <div class="list-group">
+                                        <span class="list-group-item"><small>Category: </small><span class="category">Notebook</span></span>
+                                        <span class="list-group-item"><small>Producer: </small><span class="producer">Asus</span></span>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- /PRODUCT DATA -->
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                            <!-- PRODUCT DATA -->
                             <div id="product1237" class="panel panel-default product">
                                 <div class="panel-body">
                                     <div class="thumbnail">
@@ -174,15 +178,17 @@
                                     <h4 class="name">Amazon Kindle 4</h4>
                                     <div class="code">Code 27002</div>
                                     <div class="price">$480.00</div>
-                                    <a class="btn btn-primary pull-right" data-id-product="1237">BUY</a>
-                                    <ul class="list-group">
-                                        <li class="list-group-item"><small>Category: </small><span class="category">Tablet</span></li>
-                                        <li class="list-group-item"><small>Producer: </small><span class="producer">Amazon</span></li>
-                                    </ul>
+                                    <a class="btn btn-primary pull-right buy-btn" data-id-product="1237">BUY</a>
+                                    <div class="list-group">
+                                        <span class="list-group-item"><small>Category: </small><span class="category">Tablet</span></span>
+                                        <span class="list-group-item"><small>Producer: </small><span class="producer">Amazon</span></span>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- /PRODUCT DATA -->
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                            <!-- PRODUCT DATA -->
                             <div id="product223" class="panel panel-default product">
                                 <div class="panel-body">
                                     <div class="thumbnail">
@@ -196,15 +202,17 @@
                                     <h4 class="name">Alcatel Onetouch</h4>
                                     <div class="code">Code 75425</div>
                                     <div class="price">$90.00</div>
-                                    <a class="btn btn-primary pull-right" data-id-product="223">BUY</a>
-                                    <ul class="list-group">
-                                        <li class="list-group-item"><small>Category: </small><span class="category">Smartphone</span></li>
-                                        <li class="list-group-item"><small>Producer: </small><span class="producer">Alcatel</span></li>
-                                    </ul>
+                                    <a class="btn btn-primary pull-right buy-btn" data-id-product="223">BUY</a>
+                                    <div class="list-group">
+                                        <span class="list-group-item"><small>Category: </small><span class="category">Smartphone</span></span>
+                                        <span class="list-group-item"><small>Producer: </small><span class="producer">Alcatel</span></span>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- /PRODUCT DATA -->
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                            <!-- PRODUCT DATA -->
                             <div id="product678" class="panel panel-default product">
                                 <div class="panel-body">
                                     <div class="thumbnail">
@@ -218,15 +226,17 @@
                                     <h4 class="name">HTC M50</h4>
                                     <div class="code">Code 42854</div>
                                     <div class="price">$435.00</div>
-                                    <a class="btn btn-primary pull-right" data-id-product="678">BUY</a>
-                                    <ul class="list-group">
-                                        <li class="list-group-item"><small>Category: </small><span class="category">Smartphone</span></li>
-                                        <li class="list-group-item"><small>Producer: </small><span class="producer">HTC</span></li>
-                                    </ul>
+                                    <a class="btn btn-primary pull-right buy-btn" data-id-product="678">BUY</a>
+                                    <div class="list-group">
+                                        <span class="list-group-item"><small>Category: </small><span class="category">Smartphone</span></span>
+                                        <span class="list-group-item"><small>Producer: </small><span class="producer">HTC</span></span>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- /PRODUCT DATA -->
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                            <!-- PRODUCT DATA -->
                             <div id="product7754" class="panel panel-default product">
                                 <div class="panel-body">
                                     <div class="thumbnail">
@@ -240,15 +250,17 @@
                                     <h4 class="name">Garmin Forerunner 600X</h4>
                                     <div class="code">Code 45678</div>
                                     <div class="price">$730.00</div>
-                                    <a class="btn btn-primary pull-right" data-id-product="7754">BUY</a>
-                                    <ul class="list-group">
-                                        <li class="list-group-item"><small>Category: </small><span class="category">Smart-watch</span></li>
-                                        <li class="list-group-item"><small>Producer: </small><span class="producer">Garmin</span></li>
-                                    </ul>
+                                    <a class="btn btn-primary pull-right buy-btn" data-id-product="7754">BUY</a>
+                                    <div class="list-group">
+                                        <span class="list-group-item"><small>Category: </small><span class="category">Smart-watch</span></span>
+                                        <span class="list-group-item"><small>Producer: </small><span class="producer">Garmin</span></span>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- /PRODUCT DATA -->
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                            <!-- PRODUCT DATA -->
                             <div id="product1124" class="panel panel-default product">
                                 <div class="panel-body">
                                     <div class="thumbnail">
@@ -262,15 +274,17 @@
                                     <h4 class="name">Product name</h4>
                                     <div class="code">Code 24778</div>
                                     <div class="price">$570.00</div>
-                                    <a class="btn btn-primary pull-right" data-id-product="1124">BUY</a>
-                                    <ul class="list-group">
-                                        <li class="list-group-item"><small>Category: </small><span class="category">Smartphone</span></li>
-                                        <li class="list-group-item"><small>Producer: </small><span class="producer">Apple</span></li>
-                                    </ul>
+                                    <a class="btn btn-primary pull-right buy-btn" data-id-product="1124">BUY</a>
+                                    <div class="list-group">
+                                        <span class="list-group-item"><small>Category: </small><span class="category">Smartphone</span></span>
+                                        <span class="list-group-item"><small>Producer: </small><span class="producer">Apple</span></span>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- /PRODUCT DATA -->
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                            <!-- PRODUCT DATA -->
                             <div id="product998" class="panel panel-default product">
                                 <div class="panel-body">
                                     <div class="thumbnail">
@@ -284,15 +298,17 @@
                                     <h4 class="name">Product name</h4>
                                     <div class="code">Code 21475</div>
                                     <div class="price">$570.00</div>
-                                    <a class="btn btn-primary pull-right" data-id-product="998">BUY</a>
-                                    <ul class="list-group">
-                                        <li class="list-group-item"><small>Category: </small><span class="category">Smartphone</span></li>
-                                        <li class="list-group-item"><small>Producer: </small><span class="producer">Apple</span></li>
-                                    </ul>
+                                    <a class="btn btn-primary pull-right buy-btn" data-id-product="998">BUY</a>
+                                    <div class="list-group">
+                                        <span class="list-group-item"><small>Category: </small><span class="category">Smartphone</span></span>
+                                        <span class="list-group-item"><small>Producer: </small><span class="producer">Apple</span></span>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- /PRODUCT DATA -->
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                            <!-- PRODUCT DATA -->
                             <div id="product865" class="panel panel-default product">
                                 <div class="panel-body">
                                     <div class="thumbnail">
@@ -306,15 +322,17 @@
                                     <h4 class="name">Alcatel Onetouch</h4>
                                     <div class="code">Code 75425</div>
                                     <div class="price">$90.00</div>
-                                    <a class="btn btn-primary pull-right" data-id-product="865">BUY</a>
-                                    <ul class="list-group">
-                                        <li class="list-group-item"><small>Category: </small><span class="category">Smartphone</span></li>
-                                        <li class="list-group-item"><small>Producer: </small><span class="producer">Alcatel</span></li>
-                                    </ul>
+                                    <a class="btn btn-primary pull-right buy-btn" data-id-product="865">BUY</a>
+                                    <div class="list-group">
+                                        <span class="list-group-item"><small>Category: </small><span class="category">Smartphone</span></span>
+                                        <span class="list-group-item"><small>Producer: </small><span class="producer">Alcatel</span></span>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- /PRODUCT DATA -->
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                            <!-- PRODUCT DATA -->
                             <div id="product3365" class="panel panel-default product">
                                 <div class="panel-body">
                                     <div class="thumbnail">
@@ -328,15 +346,17 @@
                                     <h4 class="name">HTC M50</h4>
                                     <div class="code">Code 42854</div>
                                     <div class="price">$435.00</div>
-                                    <a class="btn btn-primary pull-right" data-id-product="3365">BUY</a>
-                                    <ul class="list-group">
-                                        <li class="list-group-item"><small>Category: </small><span class="category">Smartphone</span></li>
-                                        <li class="list-group-item"><small>Producer: </small><span class="producer">HTC</span></li>
-                                    </ul>
+                                    <a class="btn btn-primary pull-right buy-btn" data-id-product="3365">BUY</a>
+                                    <div class="list-group">
+                                        <span class="list-group-item"><small>Category: </small><span class="category">Smartphone</span></span>
+                                        <span class="list-group-item"><small>Producer: </small><span class="producer">HTC</span></span>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- /PRODUCT DATA -->
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                            <!-- PRODUCT DATA -->
                             <div id="product224" class="panel panel-default product">
                                 <div class="panel-body">
                                     <div class="thumbnail">
@@ -350,15 +370,17 @@
                                     <h4 class="name">Garmin Forerunner 600X</h4>
                                     <div class="code">Code 45678</div>
                                     <div class="price">$730.00</div>
-                                    <a class="btn btn-primary pull-right" data-id-product="224">BUY</a>
-                                    <ul class="list-group">
-                                        <li class="list-group-item"><small>Category: </small><span class="category">Smart-watch</span></li>
-                                        <li class="list-group-item"><small>Producer: </small><span class="producer">Garmin</span></li>
-                                    </ul>
+                                    <a class="btn btn-primary pull-right buy-btn" data-id-product="224">BUY</a>
+                                    <div class="list-group">
+                                        <span class="list-group-item"><small>Category: </small><span class="category">Smart-watch</span></span>
+                                        <span class="list-group-item"><small>Producer: </small><span class="producer">Garmin</span></span>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- /PRODUCT DATA -->
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                            <!-- PRODUCT DATA -->
                             <div id="product1234" class="panel panel-default product">
                                 <div class="panel-body">
                                     <div class="thumbnail">
@@ -372,17 +394,53 @@
                                     <h4 class="name">Lenovo NTE550</h4>
                                     <div class="code">Code 45771</div>
                                     <div class="price">$220.00</div>
-                                    <a class="btn btn-primary pull-right" data-id-product="1234">BUY</a>
+                                    <a class="btn btn-primary pull-right buy-btn" data-id-product="1234">BUY</a>
                                     <div class="list-group">
                                         <span class="list-group-item"><small>Category: </small><span class="category">Tablet</span></span>
                                         <span class="list-group-item"><small>Producer: </small><span class="producer">Lenovo</span></span>
                                     </div>
                                 </div>
                             </div>
+                            <!-- /PRODUCT DATA -->
                         </div>
                     </div>
                     <div class="text-center">
+                        <img id="loadMoreIndicator" src="static/img/loading.gif" class="hidden" alt="Loading..."/>
                         <a id="loadMore" class="btn btn-success">Load more products</a>
+                    </div>
+                </div>
+                <div id="addProductPopup" class="modal fade" tabindex="-1" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">Add product to Shopping cart</h4>
+                            </div>
+                            <div class="modal-body row">
+                                <div class="col-xs-12 col-sm-6">
+                                    <div class="thumbnail">
+                                        <img class="product-image" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt="Product image">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <h4 class="name text-center">Name</h4>
+                                    <div class="list-group hidden-xs" style="margin-bottom: 15px">
+                                        <span class="list-group-item"><small>Category: </small><span class="category">?</span></span>
+                                        <span class="list-group-item"><small>Producer: </small><span class="producer">?</span></span>
+                                    </div>
+                                    <div class="list-group">
+                                        <span class="list-group-item"><small>Price: </small><span class="price">0</span></span>
+                                        <span class="list-group-item"><small>Count: </small><input type="number" class="count" value="1" min="1" max="10"></span>
+                                        <span class="list-group-item"><small>Cost: </small><span class="cost">0</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <img id="addToCartIndicator" src="static/img/loading.gif" class="hidden" alt="Loading..."/>
+                                <button id="addToCart" type="button" class="btn btn-primary">Add to Cart</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </main>
