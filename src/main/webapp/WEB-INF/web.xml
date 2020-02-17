@@ -12,4 +12,9 @@
         <servlet-name>XMLConfigServlet</servlet-name>
         <url-pattern>/xml</url-pattern>
     </servlet-mapping>
+
+    <session-config>
+        <tracking-mode>COOKIE</tracking-mode>
+        <session-timeout>60</session-timeout>
+    </session-config>
 </web-app>
