@@ -1,6 +1,5 @@
-package servlet.hw.hw4;
+package org.example.servlet.hw.hw4;
 
-import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebInitParam;
 import javax.servlet.annotation.WebServlet;

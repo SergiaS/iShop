@@ -6,7 +6,7 @@
 
     <servlet>
         <servlet-name>XMLConfigServlet</servlet-name>
-        <servlet-class>servlet.XMLConfigServlet</servlet-class>
+        <servlet-class>org.example.servlet.XMLConfigServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>XMLConfigServlet</servlet-name>

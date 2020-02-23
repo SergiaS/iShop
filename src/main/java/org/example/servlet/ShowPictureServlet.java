@@ -1,4 +1,4 @@
-package servlet;
+package org.example.servlet;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebInitParam;

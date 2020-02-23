@@ -1,4 +1,4 @@
-package servlet.hw.hw4.solution;
+package org.example.servlet.hw.hw4.solution;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebInitParam;

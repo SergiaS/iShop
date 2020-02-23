@@ -1,6 +1,6 @@
-package config;
+package org.example.config;
 
-import servlet.JavaConfigServlet;
+import org.example.servlet.JavaConfigServlet;
 
 import javax.servlet.ServletContainerInitializer;
 import javax.servlet.ServletContext;

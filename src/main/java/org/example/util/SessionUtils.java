@@ -1,7 +1,7 @@
-package util;
+package org.example.util;
 
-import model.Constants;
-import model.ShoppingCart;
+import org.example.Constants;
+import org.example.model.ShoppingCart;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
