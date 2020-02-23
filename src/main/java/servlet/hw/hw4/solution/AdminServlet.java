@@ -41,7 +41,7 @@ public class AdminServlet extends HttpServlet {
             validate(ip, accessKey, login, password);
             resp.getWriter().println("OK");
         } catch (IllegalStateException e){
-            System.out.println(e.getMessage());
+            System.err.println(e.getMessage());
             resp.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
             resp.getWriter().println("FAILED");
         }
