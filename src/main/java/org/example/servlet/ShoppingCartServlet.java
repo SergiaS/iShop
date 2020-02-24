@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Random;
 
-@WebServlet("/shopping-cart")
+@WebServlet("/current-cart")
 public class ShoppingCartServlet extends HttpServlet {
     private static final long serialVersionUID = -3417136977109701115L;
 
@@ -32,12 +32,8 @@ public class ShoppingCartServlet extends HttpServlet {
         showShoopingCart(req, resp);
     }
 
-    protected void showShoopingCart(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        if (SessionUtils.isCurrentShoppingCartCreated(req)){
-            resp.getWriter().println(SessionUtils.getCurrentShoppingCart(req));
-        } else {
-            resp.getWriter().println("ShoppingCart is null");
-        }
+    protected void showShoopingCart(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.getRequestDispatcher("/WEB-INF/shopping-cart.jsp").forward(req, resp);
     }
 
     protected void addProduct(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
